@@ -1,6 +1,6 @@
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowUpRight01Icon, SourceCodeIcon } from "@hugeicons/core-free-icons";
-import type { Project } from "../data/partproj";
+import type { Project } from "../data/projects";
 
 type ProjectCardProps = Project & {
   showDesc?: boolean;
@@ -31,14 +31,16 @@ export function ProjectCard({
               <HugeiconsIcon icon={SourceCodeIcon} size={18} />
             </a>
           )}
-          <a
-            href={link}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Open ${name}`}
-          >
-            <HugeiconsIcon icon={ArrowUpRight01Icon} size={18} />
-          </a>
+          {link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Open ${name}`}
+            >
+              <HugeiconsIcon icon={ArrowUpRight01Icon} size={18} />
+            </a>
+          )}
         </div>
       </div>
 

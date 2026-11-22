@@ -2,16 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "../components/Hero";
 import { Section } from "../components/SectionWrapper";
 import { ProjectCard } from "../components/ProjectCard";
-import { projects } from "../data/partproj";
+import { projects } from "../data/projects";
 import { Link } from "@tanstack/react-router";
 import { WorkExperiences } from "../components/Experiences";
 import { Footer } from "../components/Footer";
 import { Reveal } from "../components/Reveal";
+import { Skills } from "../components/Skills";
 
 export const Route = createFileRoute("/")({
   component: () => (
     <div className="w-full max-w-6xl mt-12 mx-auto space-y-10">
       <Hero />
+      <Skills />
       <Section title="Projects" id="projects">
         <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2">
           {projects.map((p, i) => (
