@@ -3,7 +3,7 @@ import { CopyrightIcon } from "@hugeicons/core-free-icons";
 
 export function Footer() {
   return (
-    <footer className="motion-safe:animate-fade-up h-12 border-t border-bone-200 py-3 flex flex-col sm:flex-row space-y-3 sm:space-y-0 items-start sm:items-center sm:justify-between mt-10">
+    <footer className="motion-safe:animate-fade-up w-full max-w-6xl mx-auto h-12 border-t border-bone-200 py-3 flex flex-col sm:flex-row space-y-3 sm:space-y-0 items-start sm:items-center sm:justify-between mt-10">
       <p className="flex items-center gap-1 text-sm text-teal-800">
         <HugeiconsIcon size={14} icon={CopyrightIcon} /> 2026 romeoxii
       </p>

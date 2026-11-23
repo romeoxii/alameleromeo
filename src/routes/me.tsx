@@ -8,34 +8,36 @@ export const Route = createFileRoute("/me")({
 
 function Me() {
   return (
-    <div className="mx-auto mt-16 w-full max-w-3xl space-y-12 px-4">
+    <div className="mx-auto mt-16 w-full max-w-6xl space-y-12 px-4">
       <Reveal>
         <h2 className="text-teal-600 text-2xl mb-5">A Little about myself.</h2>
-        <div className="grid gap-6 md:grid-cols-[1fr_11rem] md:items-start">
+        <div className="grid gap-6 md:grid-cols-[11rem_1fr] md:items-end">
           <img
             src="/romeo.png"
             alt="Romeo Alamele"
             width={400}
             height={500}
-            className="order-first aspect-4/5 w-full max-w-44 rounded-md bg-bone-300 object-cover md:order-0"
+            className="order-first aspect-4/5 w-full max-w-44 rounded-md bg-bone-300 object-cover md:order-0 md:col-start-1 md:row-start-1"
           />
 
-          <div className="space-y-4 text-base leading-relaxed text-teal-900 md:row-start-1">
-            <p>
-              Software developer who likes small, sharp tools over big
-              frameworks. An introvert by nature and a software developer by
-              passion, eager to build things that speak louder than I do.
-            </p>
-            <p>
-              My go-to stack is Vue.js / Nuxt.js, Tailwind CSS and Supabase. For
-              backend, I'm learning Python (FastAPI) and PHP (Laravel). I don't
-              have a fixed stack yet, picking up Golang soon also.
-            </p>
-            <p>
-              I love clean design, smooth flows, and websites that don't need
-              instructions. My happy place is a quiet dark room and a UI that
-              just feels right.
-            </p>
+          <div className="space-y-4 text-base leading-relaxed text-teal-900 md:col-start-2 md:row-start-1">
+            <div className="space-y-4 text-base leading-relaxed text-teal-900 md:order-0">
+              <p>
+                Software developer who likes small, sharp tools over big
+                frameworks. An introvert by nature and a software developer by
+                passion, eager to build things that speak louder than I do.
+              </p>
+              <p>
+                My go-to stack is Vue.js / Nuxt.js, Tailwind CSS and Supabase.
+                For backend, I'm learning Python (FastAPI) and PHP (Laravel). I
+                don't have a fixed stack yet, picking up Golang soon also.
+              </p>
+              <p>
+                I love clean design, smooth flows, and websites that don't need
+                instructions. My happy place is a quiet dark room and a UI that
+                just feels right.
+              </p>
+            </div>
           </div>
         </div>
       </Reveal>
