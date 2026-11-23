@@ -2,7 +2,7 @@ export type Project = {
   name: string;
   desc: string;
   link?: string;
-  repo: string | null;
+  repo?: string | null;
   image: string;
 };
 
@@ -54,6 +54,12 @@ export const AllProjects: Project[] = [
     image: "/hedraios-vercel-app.png",
   },
   {
+    name: "Metrica",
+    desc: "Responsive React admin dashboard with customer search and pagination, live stats and charts, and a protected-route auth flow. Built with TypeScript, TanStack Query, and Recharts.",
+    link: "https://metrica-kappa.vercel.app/",
+    image: "/metrica-dashboard.png",
+  },
+  {
     name: "Nucleus",
     desc: "Nucleus brings multiple AI tools into a single unified dashboard, so individuals and teams can access, manage, and collaborate without juggling tabs and subscriptions. Built with Nuxt.js, TypeScript, and Tailwind CSS.",
     link: "https://nucleus-ashy.vercel.app",
@@ -70,13 +76,6 @@ export const AllProjects: Project[] = [
   {
     name: "ApexPanel",
     desc: "ApexPanel is a full-stack admin dashboard: a secure, centralized control panel for managing users, products, and system access. Built with Vue.js, Tailwind CSS, Node.js, and Express.js.",
-    link: "https://apex-panel.vercel.app",
-    repo: "https://github.com/romeoxii/ApexPanel",
-    image: "apex-panel-vercel-app.png",
-  },
-  {
-    name: "Dashboard",
-    desc: "React concepts lecture utilized and Auth . Built with React.js, Tailwind CSS, DummyJSON, and Tanstack query.",
     link: "https://apex-panel.vercel.app",
     repo: "https://github.com/romeoxii/ApexPanel",
     image: "apex-panel-vercel-app.png",

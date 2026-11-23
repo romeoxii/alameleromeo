@@ -5,9 +5,9 @@ import { ProjectCard } from "../components/ProjectCard";
 import { projects } from "../data/projects";
 import { Link } from "@tanstack/react-router";
 import { WorkExperiences } from "../components/Experiences";
-import { Footer } from "../components/Footer";
 import { Reveal } from "../components/Reveal";
 import { Skills } from "../components/Skills";
+import { GitHubCalendar } from "react-github-calendar";
 
 export const Route = createFileRoute("/")({
   component: () => (
@@ -32,7 +32,15 @@ export const Route = createFileRoute("/")({
         </div>
       </Section>
       <WorkExperiences />
-      <Footer />
+
+      <GitHubCalendar
+        username="romeoxii"
+        colorScheme="light"
+        theme={{
+          light: ["#f2e1bf", "#a7cdc4", "#438c7d", "#0f5649", "#012a23"],
+        }}
+        blockSize={11}
+      />
     </div>
   ),
 });
